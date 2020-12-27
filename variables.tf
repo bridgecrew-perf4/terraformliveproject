@@ -5,12 +5,12 @@ variable "namespace" {
  
 variable "ssh_keypair" {
   description = "optional ssh keypair to use for EC2 instance"
-  default     = null
+  default     = virginia.pem
   type        = string
 }
  
 variable "region" {
   description = "AWS region"
-  default = "us-west-2"
+  default = "us-east-1"
   type = string
 }
